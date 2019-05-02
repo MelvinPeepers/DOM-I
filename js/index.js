@@ -47,15 +47,39 @@ navItems.forEach((link, i) => {
   link.innerHTML = siteContent.nav[`nav-item-${i+1}`];
 });
 
-// nav items green
+
+
+
+/***************************** 
+  Task 3
+*******************************/
+
+// nav append  task 3
+const newNavItem = document.createElement('a');
+const navItemsPrepend = document.querySelector('nav');
+navItemsPrepend.appendChild(newNavItem);
+newNavItem.textContent = 'Support';
+
+// nav prepend task 3
+const newNavItemTwo = document.createElement('a');
+const navItemsAppend = document.querySelector('nav');
+navItemsAppend.prepend(newNavItemTwo);
+newNavItemTwo.textContent = 'Home';
+
+// nav items green task 3
 const navItemsColor = document.querySelectorAll('nav a');
 navItemsColor.forEach((link, i) => {
   link.style.color = 'green';
 });
 
-// nav append 
-const navItemsAppend = document.querySelector('nav');
-navItemsAppend.appendChild('Home');
+/***************************** 
+  Task 3
+*******************************/
+
+
+
+
+
 
 // cta h1
 const ctaHeader = document.querySelector('h1');
